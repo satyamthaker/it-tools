@@ -4,7 +4,7 @@ from tkinter import *
 
 #creating master
 
-s=Tk()
+master=Tk()
 
 #declaring variable
 
@@ -30,9 +30,9 @@ def option3():
 
 #creating radio buttons
 
-r1=Radiobutton(s,text="option1",variable=var1,command=option1,value=1)
-r2=Radiobutton(s,text="option2",variable=var1,command=option2,value=2)
-r3=Radiobutton(s,text="option3",variable=var1,command=option3,value=3)
+r1=Radiobutton(master,text="option1",variable=var1,command=option1,value=1)
+r2=Radiobutton(master,text="option2",variable=var1,command=option2,value=2)
+r3=Radiobutton(master,text="option3",variable=var1,command=option3,value=3)
 
 #placing the radiobuttons
 
@@ -41,7 +41,7 @@ r2.grid(row=1,column=0)
 r3.grid(row=2,column=0)
 #creating label
 
-L1=Label(s)
+L1=Label(master)
 L1.grid(row=3,column=0)
 if var1==1:
       print("option is 1")
